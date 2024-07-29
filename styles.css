@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+h1::selection {
+    color: #1B244A;
+    background-color: #FFFFFF;
+}
+
+.scoreboard::selection {
+    color: #080001;
+    background-color: #F94F6D;
+}
+
+body {
+    background: #1B244A;
+    font-family: Orbitron, sans-serif;
+    color: #FFFFFF; 
+    margin: 7.5rem 0;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    font-family: Orbitron, sans-serif;
+    background-color: #1B244A;
+    border: 2px solid #9AABD8;
+    border-radius: 4px;
+}
+
+.scoreboards {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 6rem;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Orbitron, sans-serif;
+    font-size: 2.75rem;
+}
+
+.scoreboard {
+    font-size: 5rem;
+    background-color: #080001;
+    color: #F94F6D;
+    border-radius: 4px;
+    padding: 2rem 4rem;
+}
+
+.score-btns {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 12px;
+}
+
+button:not(.new-game-btn) {
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    width: 5rem;
+    height: 3rem;
+    color: #9AABD8;
+}
+
+.new-game-btn {
+    margin-top: -3rem;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    width: 72%;
+    font-weight: 900;
+}
+
+button:hover {
+    transition: border 0.3s ease-in-out, background-color 0.5s ease-in-out;
+    cursor: pointer;
+    border: 4px solid #B9C9F5;
+    background-color: #2C355B;
+}
+
+button:active {
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: 0 0 0 2px #2470D6;
+}

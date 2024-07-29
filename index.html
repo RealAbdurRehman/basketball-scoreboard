@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An amazing Basketball Scoreboard app." />
+    <title>Basketball Scoreboard</title>
+    <link rel="icon" type="image/x-icon" href="Images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <main>
+        <div class="scoreboards">
+            <div class="home">
+                <h1>HOME</h1>
+                <div class="scoreboard" id="home-scoreboard">0</div>
+                <div class="score-btns">
+                    <button value="One Home" id="btn">+ 1</button>
+                    <button value="Two Home" id="btn">+ 2</button>
+                    <button value="Three Home" id="btn">+ 3</button>
+                </div>
+            </div>
+            <div class="guest">
+                <h1>GUEST</h1>
+                <div class="scoreboard" id="guest-scoreboard">0</div>
+                <div class="score-btns">
+                    <button value="One Guest" id="btn">+ 1</button>
+                    <button value="Two Guest" id="btn">+ 2</button>
+                    <button value="Three Guest" id="btn">+ 3</button>
+                </div>
+            </div>
+            <button class="new-game-btn">NEW GAME</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
